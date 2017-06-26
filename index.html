@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><!-- Import Bootstrap css dependencies  -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> <!-- Import font awesome css dependecies  -->
+    <link rel="stylesheet" href="assets/css/styles.css"><!--Link internl stylesheet  -->
+</head>
+
+<body>
+    <div class="container container-fluid"> <!-- Fluid container  -->
+
+        <div class="scrollmenu"><!-- Scroll menu styled by internal stylesheet  -->
+          <a href="#home">Home</a><!-- Display multiple nav pills  -->
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#support">Support</a>
+          <a href="#blog">Blog</a>
+          <a href="#tools">Tools</a>  
+          <a href="#base">Base</a>
+          <a href="#custom">Custom</a>
+          <a href="#more">More</a>
+          <a href="#logo">Logo</a>
+          <a href="#friends">Friends</a>
+          <a href="#partners">Partners</a>
+          <a href="#people">People</a>
+          <a href="#work">Work</a>
+        </div>
+
+
+        <h1 class="text-center">A HTML5/CSS3/Bootstrap Form Template</h1>
+        <form class="bootstrap-form-with-validation"><!-- Form class  -->
+            <div class="form-group"> <!-- Form group  -->
+                <label class="control-label" for="text-input">User Name </label> <!--textinput for username  -->
+                <input class="form-control" type="text" name="name" required="" placeholder="Enter a Username" maxlength="10" minlength="4" autofocus="" id="text-input">
+            </div>
+            <div class="form-group"><!-- Form group  -->
+                <label class="control-label" for="password-input">Password</label><!--password input  -->
+                <input class="form-control" type="password" name="password" required="" placeholder="Enter a password" minlength="6" autofocus="" id="password-input">
+            </div>
+            <div class="form-group"><!-- Form group  -->
+                <label class="control-label" for="email-input">Email</label><!--email input  -->
+                <input class="form-control" type="email" name="email" required="" placeholder="Enter a valid email ID" autofocus="" id="email-input">
+            </div>
+            <div class="form-group"><!-- Form group  -->
+                <label class="control-label" for="gender">Gender </label>
+                    <span><label class="control-label radio-inline" for="gender">
+                        <input type="radio" name="gender">Male</label></span>
+                   <!-- <span><label class="control-label radio-inline" for="gender">-->
+                        <input type="radio" name="gender">Female</label></span></div>
+            <div class="form-group"><!-- Form group  -->
+                <label class="control-label" for="textarea-input">Textarea </label><!--Textarea input  -->
+                <textarea class="form-control" name="textarea-input" id="textarea-input"></textarea><!--Textarea input  -->
+    </div>
+    <div class="form-group"><!-- Form group  -->
+        <label class="control-label" for="search-input">Search Form</label><!-- Search bar  -->
+        <div class="input-group">
+            <div class="input-group-addon"><span> <i class="glyphicon glyphicon-search"></i></span></div><!-- Add glyphicon of search icon to the search bar  -->
+            <input class="form-control" type="search" name="search-input" id="search-input"><!-- Search input -->
+        </div>
+    </div>
+    <div class="form-group"><!-- Form group -->
+        <label class="control-label" for="file-input">File Input</label><!-- File input  -->
+        <input type="file" name="file-input" id="file-input"><!-- On click open the local folder   -->
+    </div>
+    <div class="panel panel-default credit-card-box"> <!-- Panel for card payment options -->
+        <div class="panel-heading"><!-- Panel heading -->
+            <h3 class="panel-title"><span class="panel-title-text">Payment Details </span><img class="img-responsive panel-title-image" src="assets/img/accepted_cards.png"></h3></div><!-- Include the panel title and the images on the right -->
+        <div class="panel-body"> <!-- Panel body -->
+            <form id="payment-form"><!--Form for payment details  -->
+                <div class="row"><!--Bootstrap row  -->
+                    <div class="col-xs-12"><!-- Bootstrap column of full screen width for smaller screens -->
+                        <div class="form-group"><!-- Form group -->
+                            <label class="control-label" for="cardNumber">Card number </label><!--Input for card number  -->
+                            <div class="input-group">
+                                <input class="form-control" type="tel" required="" placeholder="Valid Card Number" maxlength="16" minlength="16" id="cardNumber"><!--Validation pattern of 16 characters  -->
+                                <div class="input-group-addon"><span><i class="fa fa-credit-card"></i></span></div><!-- Icon of card  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"><!--Bootstrap row  -->
+                    <div class="col-xs-7"><!-- Bootstrap column of 7 vertical grids for smaller screens -->
+                        <div class="form-group">
+                            <label class="control-label" for="cardExpiry"><span class="hidden-xs">expiration </span><span class="visible-xs-inline">EXP </span> date</label><!--Input for card Expiration date  -->
+                            <input class="form-control" type="tel" required="" placeholder="MM / YY" maxlength="5" minlength="5" id="cardExpiry"><!--Validation pattern of 5 characters  -->
+                        </div>
+                    </div>
+                    <div class="col-xs-5 pull-right"><!-- Bootstrap column of 5 vertical grids for smaller screens -->
+                        <div class="form-group">
+                            <label class="control-label" for="cardCVC">CVV code</label><!--Input for CVV code  -->
+                            <input class="form-control" type="tel" required="" placeholder="CVV" maxlength="3" minlength="3" autofocus="" id="cardCVC"><!--Validation pattern of 3 characters  -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row"><!--Bootstrap row  -->
+                    <div class="col-xs-12"><!-- Bootstrap column of full width for smaller screens -->
+                        <div class="form-group">
+                            <label class="control-label" for="couponCode">coupon code</label>
+                            <input class="form-control" type="text" id="couponCode"><!--Input for coupon code  -->
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label class="control-label">
+                                    <input type="checkbox" required="">I've read and accept the terms and conditions</label><!--Checkbox for terms and conditions  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"><!--Bootstrap row  -->
+                    <div class="col-xs-12"><!-- Bootstrap column of full width for smaller screens -->
+                        <button class="btn btn-success btn-block btn-lg" type="submit">Start Subscription</button><!--Submit button which does not submit till all the form validations are valid -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script><!--Import internal jquery files  -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script><!--Import Bootstrap jquery files  -->
+</body>
+
+</html>
